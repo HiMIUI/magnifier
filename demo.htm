@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>放大镜</title>
+		<script src="jquery-3.4.1-min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="magnifier.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<br>
+		<br>
+		<img class="demo" src="pic.jpg" width="600" height="auto" style="position: relative;margin: 0 auto;display: block;">
+		<br>
+		<img class="demo2" src="scean.jpg" width="600" height="auto" style="position: relative;margin: 0 auto;display: block;">
+
+		<script>
+			$(function(){
+				
+				$(".demo").magnifier({
+					"magnifer_id": "1",//页面存在多张图片时的唯一标识符，不传默认为一张图，如果有传值放大镜ID后面加上后缀"_唯一标识符"
+					"newsize": "150"//放大镜大小，默认不传为200
+				});
+				$(".demo2").magnifier({
+					"magnifer_id": "2",
+					"newsize": "200"
+				});
+			})
+		</script>
+
+	</body>
+</html>
