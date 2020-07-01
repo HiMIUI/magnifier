@@ -5,7 +5,7 @@ jquery扩展插件-图片放大镜
 
 
 Html：
-<img class="demo" src="pic.jpg" width="600" height="auto" style="position: relative;margin: 0 auto;display: block;">
+<img class="demo" src="#" width="600" height="auto" style="position: relative;margin: 0 auto;display: block;">
 
 
 Javascript：
